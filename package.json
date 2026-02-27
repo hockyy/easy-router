@@ -1,0 +1,56 @@
+{
+  "name": "@hocky/easy-router",
+  "version": "1.0.0",
+  "description": "Easy OpenRouter management for React — persistent hooks for API keys, models, and chat",
+  "homepage": "https://github.com/hockyy/easy-router#readme",
+  "bugs": {
+    "url": "https://github.com/hockyy/easy-router/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/hockyy/easy-router.git"
+  },
+  "license": "ISC",
+  "author": "hockyy",
+  "type": "commonjs",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "openrouter",
+    "react",
+    "hooks",
+    "ai",
+    "llm",
+    "chat",
+    "localStorage",
+    "useStore"
+  ],
+  "peerDependencies": {
+    "react": ">=19.0.0",
+    "ai": ">=6.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.0",
+    "react": "^19.0.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@openrouter/ai-sdk-provider": "^2.2.3"
+  }
+}
